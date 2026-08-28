@@ -33,7 +33,7 @@ excluded_extensions = [".png", ".jpg", ".jpeg"]  # Add any extensions you want t
 # Initialize the output files
 raw_path_file = "raw-path.txt"
 paths_file = "paths.py"
-markdown_file = "file-tree.md"
+markdown_file = "file-tree_" + os.path.basename(project_root) + ".md"
 
 # Clear previous content in the output files
 for file in [raw_path_file, paths_file, markdown_file]:
