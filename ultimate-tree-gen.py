@@ -167,7 +167,7 @@ def main():
     output_file = markdown_file  # Use the existing markdown file name
 
     with open(output_file, 'w', encoding='utf-8') as f:
-        f.write(f"# File Tree Structure\n\n{project_root}\n\n{tree_str}\n")
+        f.write(f"# File Tree Structure\n\n{project_root}{os.sep}\n\n{tree_str}\n")
 
     # Remove the temporary/unneeded files. Comment out code if you want to keep them.
     for file in [raw_path_file, paths_file,]:
